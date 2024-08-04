@@ -47,8 +47,8 @@ jobs:
           export TZ='Asia/Shanghai'
           npm run ctf
         env:
-          CTFPRICE_MONGODB_NAME: ${{ secrets.MONGO_DB_NAME }}
-          CTFPRICE_MONGO_URI: ${{ secrets.MONGO_DB_URI }}
+          CTFPRICE_MONGO_NAME: ${{ secrets.CTFPRICE_MONGO_NAME }}
+          CTFPRICE_MONGO_URI: ${{ secrets.CTFPRICE_MONGO_URI }}
 
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
